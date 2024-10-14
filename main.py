@@ -33,6 +33,13 @@ class RealMult:
     def __str__(self):
         return f"{self.a} * {self.b}"
 
-n = 20
+def nicePrint(str,needLen):
+    needAdd = needLen - len(str)
+    str += needAdd*" "
+    print(str,end="")
+
+n = 10
 for i in range(n):
-    print(RealMult())
+    for j in range(3):
+        nicePrint(RealMult().__str__(),20)
+    print()
